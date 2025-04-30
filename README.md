@@ -1,5 +1,7 @@
 # Go Web Framework Performance Benchmark
 
+English | [中文](README_CN.md)
+
 This project provides a simple performance test suite to compare popular Go web frameworks:
 - Hertz (High-performance HTTP framework by CloudWeGo)
 - Gin (Popular lightweight HTTP framework)

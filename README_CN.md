@@ -1,5 +1,7 @@
 # Go Web框架性能基准测试
 
+[English](README.md) | 中文
+
 本项目提供了一个简单的性能测试套件，用于国内比较流行的Go语言Web框架：
 - Hertz (CloudWeGo开源的高性能HTTP框架)
 - Gin (流行的轻量级HTTP框架)
