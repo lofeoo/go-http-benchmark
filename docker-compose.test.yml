@@ -1,0 +1,19 @@
+services:
+  benchmark:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.benchmark
+    depends_on:
+      - nethttp
+      - gin
+      - hertz
+      - gozero
+      - kratos
+    networks:
+      - benchmark_network
+    volumes:
+      - ./benchmark_results:/app/benchmark_results
+
+networks:
+  benchmark_network:
+    external: true 

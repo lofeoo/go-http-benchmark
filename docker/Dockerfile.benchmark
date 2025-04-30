@@ -1,0 +1,24 @@
+FROM golang:1.24.2-alpine AS builder
+
+WORKDIR /app
+COPY . .
+RUN go build -o /benchmark_tool cmd/benchmark/main.go
+
+# 安装hey工具
+RUN go install github.com/rakyll/hey@latest
+
+FROM alpine:latest
+WORKDIR /app
+COPY --from=builder /benchmark_tool .
+COPY --from=builder /go/bin/hey /usr/local/bin/
+COPY run_all_tests.sh .
+
+# 安装bash和网络工具
+RUN apk add --no-cache bash ncurses curl
+
+# 配置权限
+RUN chmod +x run_all_tests.sh
+RUN chmod +x /usr/local/bin/hey
+
+# 等待所有服务启动后运行测试脚本
+CMD ["bash", "run_all_tests.sh"] 
