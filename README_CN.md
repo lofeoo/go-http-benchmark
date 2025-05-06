@@ -16,9 +16,9 @@
 
 ## 使用方法
 - 部署到docker，并执行测试
-```docker compose up```
+```docker compose up -d```
 - 结果导出到本地
-```docker cp testhertz-benchmark-1:/app/benchmark_results/summary_20250419_022006.md .```
+```docker cp go-http-benchmark-benchmark-1:/app/benchmark_results/summary_20250419_022006.md .```
 
 ## Cursor Promt
 - 文档最后附Cursor Rules设置。
@@ -72,8 +72,8 @@ mkdir cmd\server\hertz, cmd\server\gin, cmd\server\gozero, cmd\server\kratos, cm
 │   └── benchmark/       # 基准测试工具和共享代码
 ├── docker-compose.yml   # Docker Compose配置
 ├── go.mod               # Go模块定义
-└── README.md            # 项目说明
-└── README_CN.md            # Project description
+└── README.md            # Project description
+└── README_CN.md            # 项目说明
 ```
 
 ## 运行测试

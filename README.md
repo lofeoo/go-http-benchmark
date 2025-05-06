@@ -16,9 +16,9 @@ Testing tools used:
 
 ## Usage
 - Deploy to docker and run tests
-```docker compose up```
+```docker compose up -d```
 - Export results to local
-```docker cp testhertz-benchmark-1:/app/benchmark_results/summary_20250419_022006.md .```
+```docker cp go-http-benchmark-benchmark-1:/app/benchmark_results/summary_20250419_022006.md .```
 
 ## Cursor Prompt
 - Cursor Rules settings are attached at the end.
