@@ -191,25 +191,21 @@ docker-compose run benchmark
 | nethttp | params | 164753.2482 | 0.0060 | in |
 | nethttp | query | 161569.7545 | 0.0060 | in |
 | nethttp | post | 141451.8239 | 0.0060 | in |
-
 | gin | hello | 168953.1430 | 0.0060 | in |
 | gin | json | 158470.4854 | 0.0060 | in |
 | gin | params | 164097.7466 | 0.0060 | in |
 | gin | query | 154729.8225 | 0.0060 | in |
 | gin | post | 140334.5761 | 0.0060 | in |
-
 | hertz | hello | 206185.5393 | 0.0060 | in |
 | hertz | json | 204412.3358 | 0.0060 | in |
 | hertz | params | 203103.8654 | 0.0060 | in |
 | hertz | query | 207745.6325 | 0.0060 | in |
 | hertz | post | 195467.2275 | 0.0060 | in |
-
 | gozero | hello | 166522.2102 | 0.0060 | in |
 | gozero | json | 161078.8267 | 0.0060 | in |
 | gozero | params | 159459.4716 | 0.0060 | in |
 | gozero | query | 154010.4112 | 0.0060 | in |
 | gozero | post | 139127.2122 | 0.0060 | in |
-
 | kratos | hello | 126644.5523 | 0.0060 | in |
 | kratos | json | 118468.3119 | 0.0060 | in |
 | kratos | params | 116926.1225 | 0.0060 | in |
